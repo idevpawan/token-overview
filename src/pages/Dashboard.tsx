@@ -14,7 +14,7 @@ function Dashboard() {
           <div className="bg-[#131722] rounded-md border border-[#363A45] col-span-1 p-4">
             <div className="flex items-center gap-3">
               <img
-                src={tokenData.info.imageUrl}
+                src={tokenData.info?.imageUrl ?? ""}
                 width={40}
                 height={40}
                 alt="token_image"
