@@ -45,7 +45,10 @@ function Dashboard() {
         </div>
       )}
       <div className="col-span-2 tradingView-h">
-        <Chart />
+        <Chart
+          chain={tokenData?.chainId ?? ""}
+          address={tokenData?.pairAddress ?? ""}
+        />
       </div>
     </div>
   );
