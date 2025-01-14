@@ -42,14 +42,14 @@ function Dashboard() {
               </p>
             </div>
           </div>
+          <div className="col-span-2 tradingView-h">
+            <Chart
+              chain={tokenData?.chainId ?? ""}
+              address={tokenData?.pairAddress ?? ""}
+            />
+          </div>
         </div>
       )}
-      <div className="col-span-2 tradingView-h">
-        <Chart
-          chain={tokenData?.chainId ?? ""}
-          address={tokenData?.pairAddress ?? ""}
-        />
-      </div>
     </div>
   );
 }
