@@ -1,4 +1,3 @@
-// config.ts
 import { createConfig, http, injected } from "wagmi";
 import { mainnet } from "wagmi/chains";
 

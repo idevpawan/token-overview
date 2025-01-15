@@ -1,0 +1,35 @@
+enum Blockchain {
+  ethereum = 1,
+  optimism = 10,
+  cronos = 25,
+  bsc = 56,
+  gnosis = 100,
+  heco = 128,
+  polygon = 137,
+  fantom = 250,
+  kcc = 321,
+  zkSyncEra = 324,
+  ethw = 10001,
+  fon = 201022,
+  arbitrum = 42161,
+  avalanche = 43114,
+  lineaMainnet = 59144,
+  base = 8453,
+  tron = "tron",
+  scroll = 534352,
+  opbnb = 204,
+  mantle = 5000,
+  zkfair = 42766,
+  blast = 81457,
+  mantapacific = 169,
+  berachainartiotestnet = 80085,
+  merlin = 4200,
+  bitlayermainnet = 200901,
+  zkLinkNova = 810180,
+  XLayerMainnet = 196,
+  solana = "solana",
+}
+
+export function getChainIdByName(name: string): number | string | undefined {
+  return Blockchain[name as keyof typeof Blockchain];
+}

@@ -22,21 +22,21 @@ function SearchInput({ setSelectedToken }: SearchInputProps) {
         setIsLoading(false);
       }
     } else {
-      setList([]); // Clear the list when search is empty
+      setList([]);
     }
   };
 
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
       handleFetchToken();
-    }, 500); // Adjust the delay as needed (500ms in this case)
+    }, 500);
 
-    return () => clearTimeout(debounceTimer); // Clear timeout if the component is unmounted or searchValue changes
+    return () => clearTimeout(debounceTimer);
   }, [searchValue]);
 
   const handleSelectToken = (token: TokenData) => {
-    setSelectedToken(token); // Pass the selected token to parent
-    setSearchValue(""); // Clear the search input after selection
+    setSelectedToken(token);
+    setSearchValue("");
     setList([]);
   };
 
