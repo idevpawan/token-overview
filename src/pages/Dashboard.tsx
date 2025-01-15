@@ -78,7 +78,7 @@ function Dashboard() {
                 <span className="text-white font-semibold">
                   {tokenData?.pairAddress.slice(0, 6) +
                     "..." +
-                    tokenData?.pairAddress.slice(-6) ?? "-"}
+                    tokenData?.pairAddress.slice(-6)}
                 </span>
               </p>
               <p className="text-sm flex justify-between text-[#aeaeae] mt-1">
@@ -86,7 +86,7 @@ function Dashboard() {
                 <span className="text-white font-semibold">
                   {tokenData?.baseToken.address.slice(0, 6) +
                     "..." +
-                    tokenData?.baseToken.address.slice(-6) ?? "-"}
+                    tokenData?.baseToken.address.slice(-6)}
                 </span>
               </p>
               <p className="text-sm flex justify-between text-[#aeaeae] mt-1">
